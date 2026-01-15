@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero{
+    height:70vh;
+    background:url("./Images/louis-hansel-u13IpYtZ9I8-unsplash.jpg") center/cover no-repeat;
+    position:relative;
+}
+
+/* dark overlay */
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
+
+/* NAVBAR */
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#fff;
+    z-index:2;
+}
+
+/* left links */
+.nav-left a{
+    color:#fff;
+    text-decoration:none;
+    margin-right:30px;
+    font-size:14px;
+    letter-spacing:1px;
+    position:relative;
+}
+.nav-left a.active::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:100%;
+    height:2px;
+    background:#e0a04b;
+}
+
+/* center logo */
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+}
+
+/* right */
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.nav-right span{
+    font-size:14px;
+    opacity:.8;
+}
+.btn{
+    border:1px solid #fff;
+    padding:10px 22px;
+    font-size:13px;
+    text-decoration:none;
+    color:#fff;
+    letter-spacing:2px;
+}
+
+/* HERO TEXT */
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    z-index:2;
+    text-align:center;
+}
+.hero-text h1{
+    font-family:'Playfair Display', serif;
+    font-size:64px;
+    letter-spacing:4px;
+}
+/*QUANTITY*/
+
+/* SECTION */
+.food-section {
+    padding: 120px 80px;
+    background-color: #0b0b0b;
+}
+
+.food-container {
+    max-width: 1400px;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LEFT CONTENT */
+.food-content {
+    max-width: 520px;
+}
+
+.small-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #d4a24c;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.small-heading span {
+    width: 60px;
+    height: 1px;
+    background: #d4a24c;
+}
+
+.food-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color:white;
+}
+
+.food-content p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #ccc;
+    margin-bottom: 22px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 34px;
+    background: #e56717;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #c95512;
+}
+
+/* RIGHT IMAGES */
+.food-images {
+    position: relative;
+    width: 660px;
+    height: 628px;
+}
+
+.img {
+    position: absolute;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.img-big {
+    width: 412px;
+    height: 550px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-small {
+    width: 380px;
+    height: 550px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/*Our Philosophy*/
+/* SECTION */
+.philosophy {
+    padding: 100px 80px;
+    background-color: #0b0b0b;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+/* IMAGES */
+.images {
+    position: relative;
+    width: 520px;
+    height: 680px;
+    margin-left: 50px;
+    margin-right: 45px;
+}
+
+.img {
+    position: absolute;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.img-left {
+    width: 424px;
+    height: 596px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.img-right {
+    width: 394px;
+    height: 596px;
+    right: -80px;
+    bottom: 0;
+    z-index: 2;
+}
+
+/* CONTENT */
+.content {
+    max-width: 520px;
+}
+
+.small-title {
+    color: #d4a24c;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 20px;
+}
+
+.small-title .line {
+    width: 60px;
+    height: 1px;
+    background: #d4a24c;
+}
+
+/* HEADING */
+.content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+/* PARAGRAPH */
+.content p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* SIGNATURE */
+.signature {
+    margin-top: 30px;
+    font-family: 'Allura', cursive;
+    font-size: 36px;
+    color: #fff;
+}
+/*testimonial*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* SECTION */
+.testimonials {
+    position: relative;
+    padding: 80px 80px 30px;
+    background: url("./Images/micheile-Eu33gzoEVts-unsplash-2.jpg") center/cover no-repeat;
+}
+
+/* DARK OVERLAY */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+/* CONTAINER */
+.testimonials-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    text-align: center;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    max-width: 380px;
+    margin: auto;
+}
+
+.quote {
+    color: #e56717;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* PROFILE */
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.profile h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* DOTS */
+.dots {
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.dots span.active {
+    background: #fff;
+}
+/*chef*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* SECTION */
+.chefs {
+    padding: 120px 80px;
+    text-align: center;
+}
+
+/* HEADER */
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #d4a24c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.line {
+    width: 60px;
+    height: 1px;
+    background: #d4a24c;
+}
+
+/* TITLE */
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+/* GRID */
+.chef-grid {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+/* CARD */
+.chef-card {
+    text-align: center;
+}
+
+.chef-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.chef-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+}
+
+.chef-img img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+/* ROLE */
+.role {
+    display: block;
+    margin-top: 25px;
+    color: #e56717;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* NAME */
+.chef-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* SOCIAL */
+.social {
+    margin-top: 18px;
+}
+
+.social i {
+    display: inline-block;
+    margin: 0 8px;
+    font-style: normal;
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #fff;
+}
+
+/*Footer*/
+.footer{
+    background:url("./Images/section-img-6.jpg") center/cover no-repeat;
+    min-height:90vh;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    position:relative;
+}
+
+.footer::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+.footer-content{
+    position:relative;
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:60px;
+}
+
+/* LEFT */
+.opening h3{
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+.opening p{
+    line-height:2;
+    opacity:.8;
+}
+
+/* CENTER */
+.center{
+    text-align:center;
+}
+.center h1{
+    font-family:'Playfair Display',serif;
+    letter-spacing:3px;
+    font-size:40px;
+}
+.center span{
+    display:block;
+    font-size:14px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+.center p{
+    opacity:.8;
+    line-height:1.8;
+}
+
+.socials{
+    margin-top:30px;
+}
+.socials i{
+    margin:0 10px;
+    font-size:18px;
+    opacity:.7;
+}
+
+/* RIGHT */
+.newsletter h3{
+    margin: bottom 20px;
+    letter-spacing:2px;
+}
+.newsletter input{
+    width:100%;
+    background:none;
+    border:none;
+    border-bottom:1px solid #aaa;
+    padding:10px 0;
+    color:#fff;
+    margin-bottom:15px;
+}
+.newsletter label{
+    font-size:13px;
+    opacity:.8;
+    text-align: left;
+}
+.check-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:13px;
+    color:rgba(255,255,255,0.8);
+    cursor:pointer;
+}
+
+.check-row input{
+    width:16px;
+    height:16px;
+}
+
+
+/* bottom bar */
+.footer-bottom{
+    position:relative;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    opacity:.7;
+}
+
+.footer-bottom a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 10px;
+} 
+
+    </style>
+</head>
+
+<body>
+    
+<section class="hero">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="nav-left">
+            <a href="index.html">HOME</a>
+            <a href="#"class="active">ABOUT</a>
+            <a href="menu.html" >OUR MENU</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="shop.html">SHOP</a>
+        </div>
+
+        <div class="logo">P.</div>
+
+        <div class="nav-right">
+             <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-pinterest"></i></span>
+            <span><i class="fab fa-youtube"></i></span>
+            <span><i class="fas fa-shopping-bag"></i></span>
+            <a href="#" class="btn">ORDER ONLINE</a>
+        </div>
+
+    </div>
+
+    <!-- CENTER TEXT -->
+    <div class="hero-text">
+        <h1>About Us</h1>
+    </div>
+
+</section>
+
+    <main>
+     
+<section class="food-section">
+    <div class="food-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="food-content">
+
+            <div class="small-heading">
+                NUTRITION AND TASTE
+                <span></span>
+            </div>
+
+            <h2>
+                QUALITY &<br>
+                BALANCED FOOD
+            </h2>
+
+            <p>
+                We serve food, harmony, and laughter. Making delicious food
+                and providing a wonderful eating experience since 1998.
+            </p>
+
+            <p>
+                We see our customers as invited guests to a party, and we are
+                the hosts. It’s our job every day to make every important
+                aspect of the customer experience a little bit better.
+            </p>
+
+            <a href="#" class="btn">DINE WITH US</a>
+        </div>
+
+        <!-- RIGHT IMAGES -->
+        <div class="food-images">
+            <img src="./Images/img-31.jpg" class="img img-big" alt="">
+            <img src="./Images/img-33 (1).jpg" class="img img-small" alt="">
+        </div>
+
+    </div>
+</section>
+ <!--Our Philosophy-->
+<section class="philosophy">
+    <div class="container">
+
+        <!-- Images -->
+        <div class="images">
+            <img src="./Images/bistro-menus-4-2-550x550.jpg" class="img img-left" alt="">
+            <img src="./Images/aigars-peda-a_iKAg00LN4-unsplash-3.jpg" class="img img-right" alt="">
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="small-title">
+                FABULOUS TASTE JOURNEY
+                <span class="line"></span>
+            </div>
+
+            <h2>OUR PHILOSOPHY</h2>
+
+            <p>
+                Simple and balanced. Alexander Petillo brings together flavors and
+                specialties from Italy and beyond to create his own culinary world,
+                full of surprising artistry.
+            </p>
+
+            <p>
+                “I traveled all over the world, feeling and learning the authenticity
+                of each local speciality food. I benefit a lot from working with other
+                chefs and restaurants. In Japan, in Thailand, in Sweden, in Mexico,
+                and elsewhere, chefs have different philosophies and ways of handling
+                ingredients.”
+            </p>
+
+            <div class="signature">Alexander Petillo</div>
+        </div>
+
+    </div>
+</section>
+<section class="testimonials">
+    <div class="overlay"></div>
+
+    <div class="testimonials-container">
+
+        <!-- ITEM 1 -->
+        <div class="testimonial">
+            <div class="quote">“</div>
+
+            <p>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                Quisque rutrum aenean leo ligula. Nulla consequat massa quis enim.
+            </p>
+
+            <div class="profile">
+                <img src="./Images/quote-author-1.png" alt="">
+                <h4>Patio Time</h4>
+                <span>Cafe Owner</span>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="testimonial">
+            <div class="quote">“</div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                commodo ligula eget dolor. Maecenas nec odio et ante tincidunt tempus.
+            </p>
+
+            <div class="profile">
+                <img src="./Images/quote-author-3.jpg" alt="">
+                <h4>Betsy Ward</h4>
+                <span>Critic</span>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="testimonial">
+            <div class="quote">“</div>
+
+            <p>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                Quisque rutrum aenean leo ligula. Nulla consequat massa quis enim.
+            </p>
+
+            <div class="profile">
+                <img src="./Images/quote-author-4.jpg" alt="">
+                <h4>Will Mo</h4>
+                <span>Barista</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DOTS -->
+    <div class="dots">
+        <span></span>
+        <span class="active"></span>
+        <span></span>
+    </div>
+
+</section>
+<section class="chefs">
+
+    <!-- SECTION HEADER -->
+    <div class="section-header">
+        <span class="line"></span>
+        <span class="subtitle">ABOUT OUR TEAM</span>
+        <span class="line"></span>
+    </div>
+
+    <h2 class="title">MEET OUR CHEFS</h2>
+
+    <!-- CHEFS GRID -->
+    <div class="chef-grid">
+
+        <!-- CHEF 1 -->
+        <div class="chef-card">
+            <div class="chef-img">
+                <img src="./Images/team-2.jpg" alt="">
+            </div>
+            <span class="role">SOUS CHEF</span>
+            <h3>Lorenzo Morelli</h3>
+
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+        <!-- CHEF 2 -->
+        <div class="chef-card">
+            <div class="chef-img">
+                <img src="./Images/team-3.jpg" alt="">
+            </div>
+            <span class="role">PASTRY CHEF</span>
+            <h3>Aaliyah Williams</h3>
+
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+        <!-- CHEF 3 -->
+        <div class="chef-card">
+            <div class="chef-img">
+                <img src="./Images/team-4.jpg" alt="">
+            </div>
+            <span class="role">SAUTÉ CHEF</span>
+            <h3>Lyon Blanchet</h3>
+
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+    </main>
+    <footer>
+        <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> -->
+
+        <div class="footer">
+
+            <div class="footer-content">
+
+                <!-- Left -->
+                <div class="opening">
+                    <h3>OPENING HOURS</h3>
+                    <p>Monday - Friday&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 22:00</p>
+                    <p>Saturday&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 00:00</p>
+                    <p>Sunday&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 23:00</p>
+                    <br>
+                    <p>* Happy hour&nbsp;&nbsp;&nbsp;&nbsp;17:00 - 21:00</p>
+                </div>
+
+                <!-- Center -->
+                <div class="center">
+                    <span>PATIOTIME</span>
+                    <h1>BISTRO</h1>
+                    <span>CAFE EST.1998</span>
+                    <p>
+                        Piazza della Signoria, 1050122, Firenze, Italy<br>
+                        M: booking@patiotime.com<br>
+                        T: +39 055 1234567
+                    </p>
+
+                    <div class="socials">
+                        <i class="fab fa-facebook-f"></i>&nbsp;
+                        <i class="fab fa-twitter"></i>&nbsp;
+                        <i class="fab fa-instagram"></i>&nbsp;
+                        <i class="fab fa-pinterest"></i>&nbsp;
+                        <i class="fab fa-youtube"></i>&nbsp;
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="newsletter">
+                    <h3>NEWSLETTER</h3>
+                    <p>Receive the latest news from us.</p>
+                    <input type="email" placeholder="Your Email Address">
+                    <label class="check-row">
+                        <input type="checkbox">
+                        <span>I agree to the Privacy Policy</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div>Restaurant & Cafe WP Theme</div>
+                <div>
+                    <a href="#">ABOUT</a>
+                    <a href="#">RESERVATION</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">POLICY</a>
+                </div>
+                <div>© Copyright PatioTime 2022</div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

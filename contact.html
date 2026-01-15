@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+               * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #fff;
+        }
+
+        /* ================= NAVBAR ================= */
+        .navbar {
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-left a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .nav-left a.active {
+            border-bottom: 2px solid orange;
+            padding-bottom: 5px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+        }
+
+        .nav-right i {
+            margin-right: 18px;
+            cursor: pointer;
+        }
+
+        .order-btn {
+            border: 1px solid white;
+            padding: 10px 22px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* map */
+        .location-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:600px;
+    background:#0b0b0b;
+}
+
+.location-left{
+    padding:100px 80px;
+    background:
+      linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7)),
+      url("./Images/louis-hansel-u13IpYtZ9I8-unsplash.jpg") center/cover;
+}
+
+.small-title{
+    color:#ff9a00;
+    letter-spacing:3px;
+    font-size:14px;
+}
+
+.location-left h2{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin:20px 0;
+}
+
+.location-left p{
+    color:#ccc;
+    line-height:1.8;
+    margin-bottom:15px;
+    max-width:520px;
+}
+
+.contact-info p{
+    margin:10px 0;
+}
+
+.contact-info i{
+    color:#ff9a00;
+    margin-right:10px;
+}
+
+.direction-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#ff6a00;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.location-map iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+/*contact us */
+.contact-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:100vh;
+}
+
+/* LEFT IMAGE */
+.contact-image{
+    background:url("./Images/aigars-peda-a_iKAg00LN4-unsplash-3.jpg") center/cover no-repeat;
+}
+
+/* RIGHT SIDE */
+.contact-form{
+    background:#0c0c0c;
+    padding:100px 80px;
+    color:white;
+}
+
+.small-title{
+    color:#ff9a00;
+    letter-spacing:2px;
+    font-size:16px;
+    display:inline-flex;
+    align-items:center;
+}
+
+.small-title::after{
+    content:"";
+    width:50px;
+    height:2px;
+    background:#ff9a00;
+    margin-left:15px;
+}
+
+.contact-form h2{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin:20px 0;
+}
+
+.contact-form p{
+    color:#aaa;
+    max-width:500px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/* FORM */
+form .row{
+    display:flex;
+    gap:40px;
+}
+
+input, textarea{
+    width:100%;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #444;
+    padding:15px 0;
+    color:white;
+    font-size:16px;
+    margin-bottom:40px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#fff;
+}
+
+button{
+    padding:15px 40px;
+    background:#ff6a00;
+    border:none;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+        /*Footer*/
+        .footer {
+            background: url("./Images/section-img-6.jpg") center/cover no-repeat;
+            min-height: 90vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .footer::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .footer-content {
+            position: relative;
+            padding: 80px 8%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        /* LEFT */
+        .opening h3 {
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        .opening p {
+            line-height: 2;
+            opacity: .8;
+        }
+
+        /* CENTER */
+        .center {
+            text-align: center;
+        }
+
+        .center h1 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 3px;
+            font-size: 40px;
+        }
+
+        .center span {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .center p {
+            opacity: .8;
+            line-height: 1.8;
+        }
+
+        .socials {
+            margin-top: 30px;
+        }
+
+        .socials i {
+            margin: 0 10px;
+            font-size: 18px;
+            opacity: .7;
+        }
+
+        /* RIGHT */
+        .newsletter h3 {
+            margin: bottom 20px;
+            letter-spacing: 2px;
+        }
+
+        .newsletter input {
+            width: 100%;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            padding: 10px 0;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .newsletter label {
+            font-size: 13px;
+            opacity: .8;
+            text-align: left;
+        }
+
+        .check-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+        }
+
+        .check-row input {
+            width: 16px;
+            height: 16px;
+        }
+
+
+        /* bottom bar */
+        .footer-bottom {
+            position: relative;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            opacity: .7;
+        }
+
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style> 
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="menu.html">OUR MENU</a>
+                <a class="active" href="#">CONTACT</a>
+                <a href="shop.html">SHOP</a>
+            </div>
+
+            <div class="logo">P.</div>
+
+            <div class="nav-right">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <button class="order-btn">ORDER ONLINE</button>
+            </div>
+        </div>
+    </header>
+    <section class="location-section">
+
+    <!-- LEFT SIDE -->
+    <div class="location-left">
+        <span class="small-title">OUR LOCATION</span>
+        <h2>WHERE TO FIND US</h2>
+
+        <p>
+            The Patio Time Cafe is located on Silk Street, in the heart of London city, on the edge of Soho.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa.
+        </p>
+
+        <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec.
+        </p>
+
+        <div class="contact-info">
+            <p><i class="fa fa-map-marker"></i> Silk St, Barbican, London EC2Y 8DS, UK</p>
+            <p><i class="fa fa-phone"></i> +39-055-123456</p>
+            <p><i class="fa fa-envelope"></i> booking@patiotime.com</p>
+        </div>
+
+        <a href="#" class="direction-btn">GET DIRECTIONS</a>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="location-map">
+        <iframe 
+            src="https://maps.google.com/maps?q=London%20Eye&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</section>
+<section class="contact-section">
+
+    <!-- LEFT IMAGE -->
+    <div class="contact-image"> </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-form">
+
+        <span class="small-title">GET IN TOUCH</span>
+        <h2>CONTACT US</h2>
+
+        <p>
+            For general enquiries please fill the following form. 
+            We will get back to you within 48 hours.
+        </p>
+
+        <form>
+            <div class="row">
+                <input type="text" placeholder="Your name">
+                <input type="email" placeholder="Your email">
+            </div>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea placeholder="Your message (optional)"></textarea>
+
+            <button>SUBMIT</button>
+        </form>
+
+    </div>
+
+</section>
+<footer>
+        <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> -->
+
+        <div class="footer">
+
+            <div class="footer-content">
+
+                <!-- Left -->
+                <div class="opening">
+                    <h3>OPENING HOURS</h3>
+                    <p>Monday - Friday&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 22:00</p>
+                    <p>Saturday&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 00:00</p>
+                    <p>Sunday&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 23:00</p>
+                    <br>
+                    <p>* Happy hour&nbsp;&nbsp;&nbsp;&nbsp;17:00 - 21:00</p>
+                </div>
+
+                <!-- Center -->
+                <div class="center">
+                    <span>PATIOTIME</span>
+                    <h1>BISTRO</h1>
+                    <span>CAFE EST.1998</span>
+                    <p>
+                        Piazza della Signoria, 1050122, Firenze, Italy<br>
+                        M: booking@patiotime.com<br>
+                        T: +39 055 1234567
+                    </p>
+
+                    <div class="socials">
+                        <i class="fab fa-facebook-f"></i>&nbsp;
+                        <i class="fab fa-twitter"></i>&nbsp;
+                        <i class="fab fa-instagram"></i>&nbsp;
+                        <i class="fab fa-pinterest"></i>&nbsp;
+                        <i class="fab fa-youtube"></i>&nbsp;
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="newsletter">
+                    <h3>NEWSLETTER</h3>
+                    <p>Receive the latest news from us.</p>
+                    <input type="email" placeholder="Your Email Address">
+                    <label class="check-row">
+                        <input type="checkbox">
+                        <span>I agree to the Privacy Policy</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div>Restaurant & Cafe WP Theme</div>
+                <div>
+                    <a href="#">ABOUT</a>
+                    <a href="#">RESERVATION</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">POLICY</a>
+                </div>
+                <div>© Copyright PatioTime 2022</div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
